@@ -8,9 +8,12 @@
 		"strict": true,
 		"skipLibCheck": true,
 		"isolatedModules": true,
-		"resolveJsonModule": true,
 		"noEmit": true,
-		"types": ["vite/client"]
+		"types": ["vite/client"],
+		"baseUrl": ".",
+		"paths": {
+			"ai-image-panel-react": ["../../packages/react/src/index.ts"]
+		}
 	},
-	"include": ["src", "demo", "vite.config.ts"]
+	"include": ["src", "vite.config.ts"]
 }

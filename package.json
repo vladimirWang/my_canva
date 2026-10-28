@@ -1,47 +1,10 @@
 {
-	"name": "ai-image-panel-react",
-	"version": "0.0.1",
-	"description": "React components for browser-side AI image processing (test release)",
-	"type": "module",
-	"main": "./dist/index.cjs",
-	"module": "./dist/index.js",
-	"types": "./dist/index.d.ts",
-	"exports": {
-		".": {
-			"types": "./dist/index.d.ts",
-			"import": "./dist/index.js",
-			"require": "./dist/index.cjs"
-		}
-	},
-	"files": [
-		"dist"
-	],
-	"sideEffects": false,
-	"keywords": [
-		"react",
-		"ai",
-		"image",
-		"image-processing",
-		"component"
-	],
-	"license": "MIT",
+	"name": "my-canva",
+	"private": true,
+	"packageManager": "pnpm@10.32.1",
 	"scripts": {
-		"dev": "vite",
-		"build": "vite build && tsc -p tsconfig.build.json",
-		"prepublishOnly": "npm run build",
-		"release": "npm publish --access public"
-	},
-	"peerDependencies": {
-		"react": ">=18",
-		"react-dom": ">=18"
-	},
-	"devDependencies": {
-		"@types/react": "^19.2.10",
-		"@types/react-dom": "^19.2.3",
-		"@vitejs/plugin-react": "^5.1.2",
-		"react": "^19.2.4",
-		"react-dom": "^19.2.4",
-		"typescript": "5.9.3",
-		"vite": "^7.3.1"
+		"dev": "pnpm --filter playground dev",
+		"build": "pnpm --filter ai-image-panel-react build",
+		"publish:pkg": "pnpm --filter ai-image-panel-react publish --access public --no-git-checks --registry=https://registry.npmjs.org"
 	}
 }
