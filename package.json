@@ -6,6 +6,5 @@
 		"dev": "pnpm --filter playground dev",
 		"build": "pnpm --filter ai-image-panel-react build",
 		"publish:pkg": "pnpm --filter ai-image-panel-react publish --access public --no-git-checks --registry=https://registry.npmjs.org"
-	},
-	"version": "0.0.1"
+	}
 }
